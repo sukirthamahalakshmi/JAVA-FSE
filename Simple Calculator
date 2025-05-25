@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class SimpleCalculator {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+
+        System.out.print("Enter the first value: ");
+        double firstNumber = userInput.nextDouble();
+
+        System.out.print("Enter the second value: ");
+        double secondNumber = userInput.nextDouble();
+
+        System.out.println("Select an operation to perform (+, -, *, /): ");
+        char operationChoice = userInput.next().charAt(0);
+
+        double calculationResult;
+
+        switch (operationChoice) {
+            case '+':
+                calculationResult = firstNumber + secondNumber;
+                System.out.println("Addition result: " + calculationResult);
+                break;
+            case '-':
+                calculationResult = firstNumber - secondNumber;
+                System.out.println("Subtraction result: " + calculationResult);
+                break;
+            case '*':
+                calculationResult = firstNumber * secondNumber;
+                System.out.println("Multiplication result: " + calculationResult);
+                break;
+            case '/':
+                if (secondNumber != 0) {
+                    calculationResult = firstNumber / secondNumber;
+                    System.out.println("Division result: " + calculationResult);
+                } else {
+                    System.out.println("Error: Cannot divide by zero");
+                }
+                break;
+            default:
+                System.out.println("Invalid operation selected");
+        }
+
+        userInput.close();
+    }
+}
