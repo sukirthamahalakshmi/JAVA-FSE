@@ -11,6 +11,5 @@ public class EvenOddChecker {
         } else {
             System.out.println(userNumber + " is an odd number");
         }
-
-    }
+}
 }
