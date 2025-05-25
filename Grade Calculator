@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class GradeCalculator {
+    public static void main(String[] args) {
+        Scanner markInput = new Scanner(System.in);
+        System.out.print("Enter your marks out of 100: ");
+        int marksOutOf100 = markInput.nextInt();
+        if (marksOutOf100 >= 90 && marksOutOf100 <= 100) {
+            System.out.println("Your grade is: A");
+        } else if (marksOutOf100 >= 80 && marksOutOf100 <= 89) {
+            System.out.println("Your grade is: B");
+        } else if (marksOutOf100 >= 70 && marksOutOf100 <= 79) {
+            System.out.println("Your grade is: C");
+        } else if (marksOutOf100 >= 60 && marksOutOf100 <= 69) {
+            System.out.println("Your grade is: D");
+        } else if (marksOutOf100 >= 0 && marksOutOf100 < 60) {
+            System.out.println("Your grade is: F");
+        } else {
+            System.out.println("Invalid input, Please enter marks between 0 and 100");
+        }
+    }
+}
