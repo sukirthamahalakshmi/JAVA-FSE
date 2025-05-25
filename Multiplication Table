@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class MultiplicationTableGenerator {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+        System.out.print("Enter a number to print its multiplication table: ");
+        int baseNumber = userInput.nextInt();
+        System.out.println("Multiplication Table for " + baseNumber + ":");
+        for (int multiplier = 1; multiplier <= 10; multiplier++) {
+            int product = baseNumber * multiplier;
+            System.out.println(baseNumber + " x " + multiplier + " = " + product);
+        }
+    }
+}
