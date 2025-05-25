@@ -1,0 +1,14 @@
+public class TypeCastingExample {
+    public static void main(String[] args) {
+        double priceWithDecimal = 199.99;
+        int roundedPrice = (int) priceWithDecimal;
+
+        int totalItems = 7;
+        double itemAsDouble = (double) totalItems;
+
+        System.out.println("Original double value: " + priceWithDecimal);
+        System.out.println("After casting to int: " + roundedPrice);
+        System.out.println("Original int value: " + totalItems);
+        System.out.println("After casting to double: " + itemAsDouble);
+    }
+}
