@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class EvenOddChecker {
+    public static void main(String[] args) {
+        Scanner inputScanner = new Scanner(System.in);
+
+        System.out.print("Please enter a whole number: ");
+        int userNumber = inputScanner.nextInt();
+
+        if (userNumber % 2 == 0) {
+            System.out.println(userNumber + " is an even number");
+        } else {
+            System.out.println(userNumber + " is an odd number");
+        }
+
+    }
+}
