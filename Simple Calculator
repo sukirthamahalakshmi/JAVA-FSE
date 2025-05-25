@@ -39,6 +39,6 @@ public class SimpleCalculator {
                 System.out.println("Invalid operation selected");
         }
 
-        userInput.close();
+        
     }
 }
