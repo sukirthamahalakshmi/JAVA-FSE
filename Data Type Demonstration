@@ -1,0 +1,14 @@
+public class DataTypeShowcase {
+    public static void main(String[] args) {
+        int numberOfStudents = 30;
+        float averageScore = 85.5f;
+        double piValue = 3.1415926535;
+        char gradeLetter = 'A';
+        boolean isCourseActive = true;
+        System.out.println("Integer (number of students): " + numberOfStudents);
+        System.out.println("Float (average score): " + averageScore);
+        System.out.println("Double (PI value): " + piValue);
+        System.out.println("Character (grade): " + gradeLetter);
+        System.out.println("Boolean (course active): " + isCourseActive);
+    }
+}
